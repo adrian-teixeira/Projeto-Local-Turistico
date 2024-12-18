@@ -1,12 +1,148 @@
-:root{
-    --background-default: #F5F4F0;
-    --border-primary: #D9D9D9;
-    --text-primary: #1B1B1B;
-    --text-secondary: #333333;
-    --text-tertiary: #696969;
-    --text-headline: #E1624F;
-    --accent-blue: #0C51A7;
-    --accent-orange: #E95E10;
-    --accent-pink: #E5245E;
-    --accent-purple: #591B98;
+:root {
+  --background-default: #f5f4f0;
+  --border-primary: #d9d9d9;
+  --text-primary: #1b1b1b;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #e1624f;
+  --accent-blue: #0c51a7;
+  --accent-orange: #e95e10;
+  --accent-pink: #e5245e;
+  --accent-purple: #591b98;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: var(--background-default);
+}
+
+.container #first-section .subtitle,
+#second-section .subtitle {
+  text-align: left;
+  color: var(--text-headline);
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+#first-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+  color: var(--text-primary);
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 28px;
+  margin: 0 auto 24px;
+}
+
+#first-section p {
+  font-style: italic;
+  padding: 0 17px;
+  text-align: center;
+  width: 130ch;
+  color: var(--text-secondary);
+  margin: 0 0 40px;
+}
+
+hr {
+  background-color: var(--text-secondary);
+  margin-bottom: 50px;
+}
+
+/* SESSAO 2 */
+
+#second-section h2 {
+  font-size: 32px;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#second-section p {
+  color: var(--text-secondary);
+}
+
+#second-section img {
+  margin: 64px auto 20px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 10px;
+}
+
+#third-section p {
+  color: var(--text-secondary);
+}
+
+#third-section > p + p,
+#fourth-section > p + p,
+#fifth-section > p + p {
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-top: 30px;
+}
+
+#third-section li,
+#fourth-section li {
+  color: var(--accent-blue);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+fourth-section p {
+  color: var(--text-secondary);
+}
+
+#fifth-section p {
+  color: var(--text-secondary);
+}
+
+#fifth-section ul {
+  margin-left: 30px;
+}
+
+#fifth-section #casais {
+  color: var(--accent-purple);
+  font-weight: bold;
+}
+#familias {
+    color: var(--accent-pink);
+    font-weight: bold;
+}
+#orcamento {
+    color: var(--accent-orange);
+    font-weight: bold;
+}
+
+hr{
+    margin: 40px 0;
+}
+
+footer p{
+    color: var(--text-secondary);
+    width: 120ch;
+    text-align: center;
+}
+
+footer p+p{
+    margin-top: 60px;
 }
